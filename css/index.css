@@ -1,0 +1,102 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img {max-width: 100%;display: block;}
+@media (prefers-reduced-motion: reduce){*{animation-duration: 0.01ms !important;animation-iteration-count: 1 !important;transition-duration: 0.01ms !important;scroll-behavior: auto !important;}}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body{
+	background: gold;
+}
+.wrapper{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.container{
+	max-width: 1200px
+	margin: auto;
+	padding: 15px 15px;
+}
+
+@media(max-width: 1200px){
+	.concontainer{
+		max-width: 970px;
+	}
+}
+@media(max-width: 992px){
+	.concontainer{
+		max-width: 750px;
+	}
+}
+@media(max-width: 767px){
+	.concontainer{
+		max-width: none;
+	}
+}
+
+.header{
+background: #111;
+text-align: center;
+color: #fff;
+}
+.header_body{
+
+}
+
+.fullscreen_one{
+	min-height: 100vh;
+	display: flex;
+	background: url(../img/1920x1080.jpg) center no-repeat;
+	background-size: auto;
+}
+
+.fullscreen_two{
+	min-height: 100vh;
+	display: flex;
+	background: url(../img/1920x1080_2.jpg) center no-repeat;
+	background-size: auto;
+}
+
+.fullscreen_body{
+	flex: 1 1 auto;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.fullscreen_link{
+	display: inline-block;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 2px;
+	background: rgba(0,0,0,0.5);
+	align-self: center;
+	padding: 0 20px;
+}
+
+.fullscreen_descrizione{
+	background: #260;
+	text-align: center;
+}
+
+.footer{
+	background: #111;
+	text-align: center;
+	color: #fff;
+}
+
